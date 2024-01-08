@@ -1,1 +1,296 @@
-----------------------
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <title>On Arrival Card</title>
+    <style>
+        @media print {
+            .tableMid {
+                border: 1px solid #ddd !important;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            th,
+            td {
+                padding: 8px;
+            }
+
+            .blackBorderBottom {
+                border-bottom: 1px solid black !important;
+            }
+
+            .blackBorder td {
+                border: 1px solid black !important;
+            }
+
+            .blackBorder {
+                border: 1px solid black !important;
+            }
+
+            img {
+                top: 0;
+                left: 0;
+                width: 90vw;
+            }
+
+            body {
+                border: 1px solid #ddd !important;
+                padding: 5px !important;
+            }
+
+            .fullWidth {
+                width: 100%;
+            }
+
+            .cusTwoWidth {
+                min-width: 25vh;
+            }
+
+            .cusThreeWidth {
+                width: 20%;
+            }
+
+            input[type="text"] {
+                border: none;
+                outline: none;
+            }
+
+            input[type="text"]::placeholder {
+                color: black;
+            }
+
+            .datetd {
+                float: left;
+                margin-left: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tableMid">
+        <thead>
+            <tr>
+                <th><img src="images/bd.png" alt="mountain"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>1.&nbspName: </td>
+                            <td class="fullWidth blackBorderBottom"><input class="fullWidth" type="text"
+                                    placeholder="Enter Your Full Name"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr class="">
+                            <td>2.&nbspSex: </td>
+                            <td class="cusTwoWidth">
+                                <table>
+                                    <tbody class="blackBorder">
+                                        <tr>
+                                            <td>Male</td>
+                                            <td><label><input type="checkbox" class="filled-in" /><span></span></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Female</td>
+                                            <td><label><input type="checkbox" class="filled-in" /><span></span></label>
+                                            </td>
+                                        </tr>
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="blackBorder cusTwoWidth">3.&nbspDate of Birth: </td>
+                            <td class="blackBorder">
+                                <table>
+                                    <tr>
+                                        <td class="datetd">Day</td>
+                                        <td class="datetd">Month</td>
+                                        <td class="datetd">Year</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="datetd" style="width: 15%;"><input type="text"></td>
+                                        <td class="datetd" style="width: 25%;"><input type="text"></td>
+                                        <td class="datetd" style="width: 20%;"><input type="text"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>4.&nbspNationality: </td>
+                            <td class="fullWidth blackBorderBottom"><input class="fullWidth" type="text"
+                                    placeholder="Enter Your Nationality"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr class="">
+                            <td class="">5.&nbspPassport Number: </td>
+                            <td>
+                                <input style="border:1px solid black;" type="text" placeholder="Enter Passport Number">
+                            </td>
+                            <td class="blackBorder cusTwoWidth">6.&nbspDate of Expiry: </td>
+                            <td class="blackBorder">
+                                <table>
+                                    <tr>
+                                        <td class="datetd">Day</td>
+                                        <td class="datetd">Month</td>
+                                        <td class="datetd">Year</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="datetd" style="width: 15%;"><input type="text"></td>
+                                        <td class="datetd" style="width: 25%;"><input type="text"></td>
+                                        <td class="datetd" style="width: 20%;"><input type="text"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr class="">
+                            <td class="">7.&nbspFlight Number: </td>
+                            <td>
+                                <input style="border:1px solid black;" type="text" placeholder="Enter Passport Number">
+                            </td>
+                            <td class="blackBorder cusTwoWidth">8.&nbspDate of Expiry: </td>
+                            <td class="blackBorder">
+                                <table>
+                                    <tr>
+                                        <td class="datetd">Day</td>
+                                        <td class="datetd">Month</td>
+                                        <td class="datetd">Year</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="datetd" style="width: 15%;"><input type="text"></td>
+                                        <td class="datetd" style="width: 25%;"><input type="text"></td>
+                                        <td class="datetd" style="width: 20%;"><input type="text"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr class="">
+                            <td class="cusTwoWidth">9.&nbspExpected duration of Stay in Bangladesh: </td>
+                            <td>
+                                <input style="border:1px solid black;" type="text" placeholder="Enter How many days">
+                            </td>
+                            <td class="">9a.&nbspPurpose of Visit: </td>
+                            <td class="fullWidth">
+                                <textarea class="fullWidth" style="border:1px solid black;"
+                                    placeholder="Enter Purpose of Visit"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td style="width: 10%">9b.&nbspAddress in Bangladesh: </td>
+                            <td class="cusThreeWidth">
+                                <textarea class="fullWidth" style="border:1px solid black;"
+                                    placeholder="Enter Address in Bangladesh"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td style="width: 10%">9c.&nbspMobile Number in Bangladesh: </td>
+                            <td class="cusThreeWidth">
+                                <textarea class="fullWidth" style="border:1px solid black;"
+                                    placeholder="Enter Mobile Number in Bangladesh"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td style="width: 10%">9d.&nbspProfession: </td>
+                            <td class="cusThreeWidth">
+                                <textarea class="fullWidth" style="border:1px solid black;"
+                                    placeholder="Enter Profession"></textarea>
+                            </td>
+                            <td style="width: 10%">9e.&nbspEmail: </td>
+                            <td class="cusThreeWidth">
+                                <textarea class="fullWidth" style="border:1px solid black;"
+                                    placeholder="Enter Email Address"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>&nbspSignature of Passenger: </td>
+                        </tr>
+                        <tr>
+                            <td class="blackBorder">
+                                <table>
+                                    <tr>
+                                        <td colspan="3"">
+                                            <textarea class=" fullWidth" style="border:1px solid black;"
+                                            placeholder="Enter Signature of Passenger"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="datetd">Day</td>
+                                        <td class="datetd">Month</td>
+                                        <td class="datetd">Year</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="datetd" style="width: 5%;"><input type="text"></td>
+                                        <td class="datetd" style="width: 8%;"><input type="text"></td>
+                                        <td class="datetd" style="width: 10%;"><input type="text"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <button onclick="window.print()">Print this page</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

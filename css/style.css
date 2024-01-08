@@ -23,17 +23,19 @@ p {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, .9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+.parallax-container .section {
+  width: 100%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
   }
+
   #index-banner .section {
     top: 10%;
   }
@@ -48,6 +50,7 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
@@ -55,9 +58,77 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
 /****byazit***/
-.myLogo{  
+.myLogo {
   border-radius: 4px;
   padding: 5px;
   width: 100px;
+}
+
+/* Custom styles to center the image within each column */
+.center-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* Ensures the image takes the full height of the column */
+}
+
+/* Custom styles to add a black border to rows and columns */
+.blackBorder {
+  padding-top: 40px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+
+.col:last-child {
+  border-right: none;
+  /* Remove right border for the last column in each row */
+}
+
+.tableMid {
+  border: 1px solid #ddd;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 40vw;
+}
+.fullWidth{
+  width:100%;
+}
+.cusTwoWidth{
+  min-width: 25vh;
+}
+.cusThreeWidth{
+  width: 20%;
+}
+.dateDiv{
+  float: left; 
+  margin-left: 10px;
+}
+th,
+td {  
+  padding: 8px;
+}
+.blackBorder td{
+  border: 1px solid black;
+}
+.blackBorderBottom{
+  border-bottom: 1px solid black;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+}
+
+input[type="text"]::placeholder {
+  color: black;
+}
+img {
+  top: 0;
+  left: 0;
+  width: 40vw;
 }
