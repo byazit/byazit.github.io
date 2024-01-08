@@ -308,12 +308,15 @@
 
     <script>
         function generatePDF() {
+            // Ensure jsPDF is loaded
             const pdf = window.jsPDF || new window.jspdf.jsPDF();
+
             const element = document.getElementById('element_to_print');
 
             // Add image to PDF
-            const imgData = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAIAAAB4X2z/AAAACXBIWXMAAB7CAAAewgFu0HU+AAEAAElEQVR4nOzdeXQTZfv/8Ve7X3SdUpq...';
-            pdf.addImage(imgData, 'PNG', 15, 15, 180, 60); // Change the dimensions as needed
+            const imgData = 'images/bd.png'; // Replace with your actual image URL
+            pdf.addImage(imgData, 'PNG', 15, 15, 180, 60);
+
 
             // Convert HTML element to PDF
             pdf.html(element, {
@@ -323,9 +326,6 @@
                 }
             });
         }
-
-        // Call the function when needed
-        //generatePDF();
     </script>
 </body>
 
