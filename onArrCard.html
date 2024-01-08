@@ -69,6 +69,10 @@
                 float: left;
                 margin-left: 5px;
             }
+
+            .no-print {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -270,7 +274,7 @@
                                 <table>
                                     <tr>
                                         <td colspan="3" class="blackBorder" style="width: 400px; height: 50px;">
-                                            
+
                                         </td>
                                     </tr>
                                     <tr class="blackBorder">
@@ -285,7 +289,7 @@
                                     </tr>
                                 </table>
                             </td>
-                            <td>
+                            <td class="no-print">
                                 <button onclick="window.print()" style="color: red;">Print this page</button>
                             </td>
                         </tr>
