@@ -10,6 +10,9 @@
     <title>On_Arrival_Card</title>
     <style>
         @media print {
+            @page {
+                size: 4in 6in;
+            }            
             .tableMid {
                 border: 1px solid #ddd !important;
                 margin-left: auto;
@@ -18,7 +21,7 @@
 
             th,
             td {
-                padding: 8px;
+                padding: 4px;
             }
 
             .blackBorderBottom {
@@ -301,7 +304,7 @@
     <script>
         function printPage() {
             const fileName = document.getElementById('nameField').value;
-            const printWindow = document.title = "On_Arrival_card_"+fileName;            
+            const printWindow = document.title = "On_Arrival_card_" + fileName;
             window.print(printWindow);
         }
 
