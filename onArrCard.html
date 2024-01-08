@@ -7,7 +7,7 @@
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <title>On Arrival Card</title>
+    <title>On_Arrival_Card</title>
     <style>
         @media print {
             .tableMid {
@@ -78,7 +78,7 @@
 </head>
 
 <body>
-    <table class="tableMid">
+    <table class="tableMid" id="element_to_print">
         <thead>
             <tr>
                 <th><img src="images/bd.png" alt="mountain"></th>
@@ -90,7 +90,7 @@
                     <table>
                         <tr>
                             <td>1.&nbspName: </td>
-                            <td class="fullWidth blackBorderBottom"><input class="fullWidth" type="text"
+                            <td class="fullWidth blackBorderBottom"><input id="nameField" class="fullWidth" type="text"
                                     placeholder="Enter Your Full Name" autocomplete="on"></td>
                         </tr>
                     </table>
@@ -290,7 +290,7 @@
                                 </table>
                             </td>
                             <td class="no-print">
-                                <button onclick="window.print()" style="color: red;">Print this page</button>
+                                <button onclick="printPage()" style="color: red;">Print this page</button>
                             </td>
                         </tr>
                     </table>
@@ -298,6 +298,14 @@
             </tr>
         </tbody>
     </table>
+    <script>
+        function printPage() {
+            const fileName = document.getElementById('nameField').value;
+            const printWindow = document.title = "On_Arrival_card_"+fileName;            
+            window.print(printWindow);
+        }
+
+    </script>
 </body>
 
 </html>
