@@ -80,7 +80,7 @@
                 display: none;
             }
         }
-    </style>    
+    </style>
 </head>
 
 <body>
@@ -304,10 +304,14 @@
             </tr>
         </tbody>
     </table>
-    <script src="js/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
     <script>
         function generatePDF() {
-            const pdf = new jsPDF();
+            console.log(window);
+            console.log(window.jsPDF);
+            const pdf = window.jsPDF || new jsPDF();
+
             const element = document.getElementById('element_to_print');
 
             // Add image to PDF
