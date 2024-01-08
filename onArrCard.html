@@ -296,7 +296,7 @@
                                 </table>
                             </td>
                             <td class="no-print">
-                                <button onclick="generatePDF()" style="color: red;">Generate PDF</button>
+                                <button onclick="printPage()" style="color: red;">Print this page</button>
                             </td>
                         </tr>
                     </table>
@@ -304,28 +304,13 @@
             </tr>
         </tbody>
     </table>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js" defer></script>
-
     <script>
-        function generatePDF() {
-            // Ensure jsPDF is loaded
-            const pdf = window.jsPDF || new window.jspdf.jsPDF();
-
-            const element = document.getElementById('element_to_print');
-
-            // Add image to PDF
-            const imgData = 'images/bd.png'; // Replace with your actual image URL
-            pdf.addImage(imgData, 'PNG', 15, 15, 180, 60);
-
-
-            // Convert HTML element to PDF
-            pdf.html(element, {
-                callback: function () {
-                    // Save or display the PDF
-                    pdf.save('On_Arrival_Card.pdf');
-                }
-            });
+        function printPage() {
+            const fileName = document.getElementById('nameField').value;
+            const printWindow = document.title = "On_Arrival_card_" + fileName;
+            window.print(printWindow);
         }
+
     </script>
 </body>
 
