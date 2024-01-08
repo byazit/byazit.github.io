@@ -81,6 +81,7 @@
             }
         }
     </style>
+    <script src="js/jspdf.umd.min.js"></script>
 </head>
 
 <body>
@@ -296,7 +297,7 @@
                                 </table>
                             </td>
                             <td class="no-print">
-                                <button onclick="printPage()" style="color: red;">Print this page</button>
+                                <button onclick="generatePDF()" style="color: red;">Generate PDF</button>
                             </td>
                         </tr>
                     </table>
@@ -305,12 +306,25 @@
         </tbody>
     </table>
     <script>
-        function printPage() {
-            const fileName = document.getElementById('nameField').value;
-            const printWindow = document.title = "On_Arrival_card_" + fileName;
-            window.print(printWindow);
+        function generatePDF() {
+            const pdf = new jsPDF();
+            const element = document.getElementById('element_to_print');
+
+            // Add image to PDF
+            const imgData = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAIAAAB4X2z/AAAACXBIWXMAAB7CAAAewgFu0HU+AAEAAElEQVR4nOzdeXQTZfv/8Ve7X3SdUpq...';
+            pdf.addImage(imgData, 'PNG', 15, 15, 180, 60); // Change the dimensions as needed
+
+            // Convert HTML element to PDF
+            pdf.html(element, {
+                callback: function () {
+                    // Save or display the PDF
+                    pdf.save('On_Arrival_Card.pdf');
+                }
+            });
         }
 
+        // Call the function when needed
+        //generatePDF();
     </script>
 </body>
 
