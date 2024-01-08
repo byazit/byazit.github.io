@@ -304,14 +304,11 @@
             </tr>
         </tbody>
     </table>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js" defer></script>
 
     <script>
         function generatePDF() {
-            console.log(window);
-            console.log(window.jsPDF);
-            const pdf = window.jsPDF || new jsPDF();
-
+            const pdf = window.jsPDF || new window.jspdf.jsPDF();
             const element = document.getElementById('element_to_print');
 
             // Add image to PDF
