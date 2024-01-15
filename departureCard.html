@@ -79,11 +79,26 @@
             .no-print {
                 display: none;
             }
+
+            .header {
+                display: none;
+            }
         }
     </style>
 </head>
 
 <body>
+    <div style="height: 7vh;margin-bottom: 50px;box-shadow: 0 4px 4px -2px gray;" class="header">
+        <div style="margin-left: 20vw;width: 20vw;float: left;" class="">
+            <a href="https://byazit.github.io/"><img id="logo-container" src="images/logo.png" class="myLogo"></a>
+        </div>
+        <div style="margin-left: 20vw;margin-top:2vh;float: left;" class="link">
+            <a href="/onArrCard.html">On Arrival Card</a>
+        </div>
+        <div style="margin-left: 2vw;margin-top:2vh;float: left;" class="link">
+            <a href="/departureCard.html">Departure Card</a>
+        </div>
+    </div>
     <table class="tableMid" id="element_to_print">
         <thead>
             <tr>
@@ -96,8 +111,9 @@
                     <table>
                         <tr>
                             <td>1.&nbspName: </td>
-                            <td class="fullWidth blackBorderBottom"><input autocomplete="on" id="nameField" class="fullWidth" type="text"
-                                    placeholder="Enter Your Full Name" autocomplete="on"></td>
+                            <td class="fullWidth blackBorderBottom"><input autocomplete="on" id="nameField"
+                                    class="fullWidth" type="text" placeholder="Enter Your Full Name" autocomplete="on">
+                            </td>
                         </tr>
                     </table>
                 </td>
@@ -112,12 +128,14 @@
                                     <tbody class="blackBorder">
                                         <tr>
                                             <td>Male</td>
-                                            <td><label><input autocomplete="on" type="checkbox" class="filled-in" /><span></span></label>
+                                            <td><label><input autocomplete="on" type="checkbox"
+                                                        class="filled-in" /><span></span></label>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Female</td>
-                                            <td><label><input autocomplete="on" type="checkbox" class="filled-in" /><span></span></label>
+                                            <td><label><input autocomplete="on" type="checkbox"
+                                                        class="filled-in" /><span></span></label>
                                             </td>
                                         </tr>
                                         <!-- Add more rows as needed -->
@@ -133,9 +151,12 @@
                                         <td class="datetd">Year</td>
                                     </tr>
                                     <tr>
-                                        <td class="datetd" style="width: 15%;"><input autocomplete="on" type="text"></td>
-                                        <td class="datetd" style="width: 25%;"><input autocomplete="on" type="text"></td>
-                                        <td class="datetd" style="width: 20%;"><input autocomplete="on" type="text"></td>
+                                        <td class="datetd" style="width: 15%;"><input autocomplete="on" type="text">
+                                        </td>
+                                        <td class="datetd" style="width: 25%;"><input autocomplete="on" type="text">
+                                        </td>
+                                        <td class="datetd" style="width: 20%;"><input autocomplete="on" type="text">
+                                        </td>
                                     </tr>
                                 </table>
                             </td>
@@ -148,8 +169,8 @@
                     <table>
                         <tr>
                             <td>4.&nbspNationality: </td>
-                            <td class="fullWidth blackBorderBottom"><input autocomplete="on" class="fullWidth" type="text"
-                                    placeholder="Enter Your Nationality"></td>
+                            <td class="fullWidth blackBorderBottom"><input autocomplete="on" class="fullWidth"
+                                    type="text" placeholder="Enter Your Nationality"></td>
                         </tr>
                     </table>
                 </td>
@@ -160,7 +181,8 @@
                         <tr class="">
                             <td class="">5.&nbspPassport Number: </td>
                             <td>
-                                <input autocomplete="on" style="border:1px solid black;" type="text" placeholder="Enter Passport Number">
+                                <input autocomplete="on" style="border:1px solid black;" type="text"
+                                    placeholder="Enter Passport Number">
                             </td>
                             <td class="blackBorder cusTwoWidth">6.&nbspDate of Expiry: </td>
                             <td class="blackBorder">
@@ -171,9 +193,12 @@
                                         <td class="datetd">Year</td>
                                     </tr>
                                     <tr>
-                                        <td class="datetd" style="width: 15%;"><input autocomplete="on" type="text"></td>
-                                        <td class="datetd" style="width: 25%;"><input autocomplete="on" type="text"></td>
-                                        <td class="datetd" style="width: 20%;"><input autocomplete="on" type="text"></td>
+                                        <td class="datetd" style="width: 15%;"><input autocomplete="on" type="text">
+                                        </td>
+                                        <td class="datetd" style="width: 25%;"><input autocomplete="on" type="text">
+                                        </td>
+                                        <td class="datetd" style="width: 20%;"><input autocomplete="on" type="text">
+                                        </td>
                                     </tr>
                                 </table>
                             </td>
@@ -187,7 +212,8 @@
                         <tr class="">
                             <td class="">7.&nbspFlight Number: </td>
                             <td>
-                                <input autocomplete="on" style="border:1px solid black;" type="text" placeholder="Enter Flight Number">
+                                <input autocomplete="on" style="border:1px solid black;" type="text"
+                                    placeholder="Enter Flight Number">
                             </td>
                             <td class="blackBorder cusTwoWidth">8.&nbspDate of Departure: </td>
                             <td class="blackBorder">
@@ -198,16 +224,19 @@
                                         <td class="datetd">Year</td>
                                     </tr>
                                     <tr>
-                                        <td class="datetd" style="width: 15%;"><input autocomplete="on" type="text"></td>
-                                        <td class="datetd" style="width: 25%;"><input autocomplete="on" type="text"></td>
-                                        <td class="datetd" style="width: 20%;"><input autocomplete="on" type="text"></td>
+                                        <td class="datetd" style="width: 15%;"><input autocomplete="on" type="text">
+                                        </td>
+                                        <td class="datetd" style="width: 25%;"><input autocomplete="on" type="text">
+                                        </td>
+                                        <td class="datetd" style="width: 20%;"><input autocomplete="on" type="text">
+                                        </td>
                                     </tr>
                                 </table>
                             </td>
                         </tr>
                     </table>
                 </td>
-            </tr>            
+            </tr>
             <tr>
                 <td>
                     <table>
@@ -243,7 +272,8 @@
                                     <tr class="blackBorder">
                                         <td class="datetd" style="width: 5%;"><input autocomplete="on" type="text"></td>
                                         <td class="datetd" style="width: 8%;"><input autocomplete="on" type="text"></td>
-                                        <td class="datetd" style="width: 10%;"><input autocomplete="on" type="text"></td>
+                                        <td class="datetd" style="width: 10%;"><input autocomplete="on" type="text">
+                                        </td>
                                     </tr>
                                 </table>
                             </td>
