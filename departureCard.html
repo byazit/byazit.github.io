@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <title>Departure_Card</title>
     <style>
@@ -88,17 +89,30 @@
 </head>
 
 <body>
-    <div style="height: 7vh;margin-bottom: 50px;box-shadow: 0 4px 4px -2px gray;" class="header">
-        <div style="margin-left: 20vw;width: 20vw;float: left;" class="">
+    <nav class="white header" role="navigation">
+        <div class="nav-wrapper container">
             <a href="https://byazit.github.io/"><img id="logo-container" src="images/logo.png" class="myLogo"></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/movies.html">Search Movies</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Bangladesh<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="/onArrCard.html">On Arrival Card</a></li>
+                <li class="divider"></li>
+                <li><a href="/departureCard.html">Departure Card</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="/onArrCard.html">On Arrival Card</a></li>
+                <li><a href="/departureCard.html">Departure Card</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
-        <div style="margin-left: 20vw;margin-top:2vh;float: left;" class="link">
-            <a href="/onArrCard.html">On Arrival Card</a>
-        </div>
-        <div style="margin-left: 2vw;margin-top:2vh;float: left;" class="link">
-            <a href="/departureCard.html">Departure Card</a>
-        </div>
-    </div>
+    </nav>
     <table class="tableMid" id="element_to_print">
         <thead>
             <tr>
