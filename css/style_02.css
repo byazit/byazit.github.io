@@ -39,3 +39,12 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .card-link-wrapper {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card-link-wrapper:hover {
+    text-decoration: none;
+  }
+  
