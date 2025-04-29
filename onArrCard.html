@@ -80,7 +80,8 @@
             .no-print {
                 display: none;
             }
-            .header{
+
+            .header {
                 display: none;
             }
         }
@@ -90,9 +91,8 @@
 <body>
     <nav class="white header" role="navigation">
         <div class="nav-wrapper container">
-            <a href="https://byazit.github.io/"><img id="logo-container" src="images/logo.png" class="myLogo"></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="/movies.html">Search Movies</a></li>
+            <a class="navbar-brand fw-bold" href="/">Byazit Bostami</a>
+            <ul class="right hide-on-med-and-down">                
                 <!-- Dropdown Trigger -->
                 <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Bangladesh<i
                             class="material-icons right">arrow_drop_down</i></a></li>
@@ -348,13 +348,19 @@
             </tr>
         </tbody>
     </table>
-    <script>
-        function printPage() {
-            const fileName = document.getElementById('nameField').value;
-            const printWindow = document.title = "On_Arrival_card_" + fileName;
-            window.print(printWindow);
-        }
+    <!-- Your existing scripts like printPage() -->
 
+    <!-- jQuery and Materialize scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            M.Dropdown.init(elems, {
+                coverTrigger: false,
+                constrainWidth: false
+            });
+        });
     </script>
 </body>
 
