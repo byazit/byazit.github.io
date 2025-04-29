@@ -140,5 +140,9 @@ img {
   text-decoration: none;
 }
 .fw-bold{
-  color: black;
+  color: white;
+  font-weight: bolder;
+}
+.navbar {
+  background-color: #2b2b3b !important;
 }
