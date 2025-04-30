@@ -3,48 +3,68 @@
     --card-bg: #2c2c3c;
     --text-color: #f0f0f0;
     --accent: #0d6efd;
-  }
-  body {
+}
+
+body {
     background-color: var(--main-bg);
     color: var(--text-color);
     scroll-behavior: smooth;
-  }
-  .navbar {
+}
+
+.navbar {
     background-color: #2b2b3b !important;
-  }
-  .navbar .nav-link,
-  .navbar-brand {
+}
+
+.navbar .nav-link,
+.navbar-brand {
     color: var(--text-color) !important;
-  }
-  .nav-link.active {
+}
+
+.nav-link.active {
     font-weight: bold;
     color: var(--accent) !important;
-  }
-  .project-card img {
+}
+
+/* Only apply styles when mobile menu is open (collapsed state) */
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        border-color: #ccc;
+        background-color: #00A7C3;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23222222' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(34,34,34, 0.7)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
+
+.project-card img {
     object-fit: cover;
     height: 200px;
-  }
-  .card {
+}
+
+.card {
     background-color: var(--card-bg);
     color: var(--text-color);
     border: none;
-  }
-  footer {
+}
+
+footer {
     background: #2b2b3b;
     padding: 1rem 0;
     color: var(--text-color);
-  }
-  .hero-section {
+}
+
+.hero-section {
     background: url('../assets/images/pexels-suzyhazelwood-1629236.jpg') center center / cover no-repeat;
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-  .card-link-wrapper {
+}
+
+.card-link-wrapper {
     text-decoration: none;
     color: inherit;
-  }
-  
-  .card-link-wrapper:hover {
+}
+
+.card-link-wrapper:hover {
     text-decoration: none;
-  }
-  
+}
