@@ -310,7 +310,14 @@
             </tr>
         </tbody>
     </table>
-    <!-- Your existing scripts like printPage() -->
+    <script>
+        function printPage() {
+            const fileName = document.getElementById('nameField').value;
+            const printWindow = document.title = "Departure_Card_" + fileName;
+            window.print(printWindow);
+        }
+
+    </script>
 
     <!-- jQuery and Materialize scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
