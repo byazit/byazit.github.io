@@ -179,4 +179,9 @@ img {
   width: 100%;
   height: auto;
 }
-
+.viewInfoPass{
+  width: 40dvw;
+}
+.showDays{
+  width: 30dvw;
+}
